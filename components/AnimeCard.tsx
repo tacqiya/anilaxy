@@ -1,15 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type AnimeCardProps = {
   title: string;
   image: string;
+  rating?: number;
+  studio: string;
+  slug?: string;
 };
 
 export default function AnimeCard({
   title,
   image,
+  rating,
+  studio,
+  slug,
 }: AnimeCardProps) {
   return (
+    <Link href={`/anime/${slug}`}>
     <div className="bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition duration-300 shadow-lg">
       <Image
         src={image}
@@ -27,7 +35,16 @@ export default function AnimeCard({
         <p className="text-gray-400 mt-2">
           Read the full review →
         </p>
+
+        <p className="text-yellow-400 mt-2">
+        ⭐ {rating}/10
+        </p>
+
+        <p className="text-gray-400">
+          {studio}
+        </p>
       </div>
     </div>
+    </Link>
   );
 }
