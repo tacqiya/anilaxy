@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center p-6 bg-black text-white">
@@ -6,11 +8,11 @@ export default function Navbar() {
       </h1>
 
       <ul className="flex gap-8">
-        <li className="cursor-pointer hover:text-red-500">Home</li>
-        <li className="cursor-pointer hover:text-red-500">Anime</li>
-        <li className="cursor-pointer hover:text-red-500">Manga</li>
-        <li className="cursor-pointer hover:text-red-500">Characters</li>
-        <li className="cursor-pointer hover:text-red-500">Scenes</li>
+        <li className="cursor-pointer hover:text-red-500"><Link href="/">Home</Link></li>
+        <li className="cursor-pointer hover:text-red-500"><Link href="/anime">Anime</Link></li>
+        <li className="cursor-pointer hover:text-red-500"><Link href="/manga">Manga</Link></li>
+        <li className="cursor-pointer hover:text-red-500"><Link href="/characters">Characters</Link></li>
+        <li className="cursor-pointer hover:text-red-500"><Link href="/scenes">Scenes</Link></li>
       </ul>
     </nav>
   );
