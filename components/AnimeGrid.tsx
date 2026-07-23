@@ -1,13 +1,5 @@
 import AnimeCard from "./AnimeCard";
-
-type Anime = {
-  id: number;
-  title: string;
-  image: string;
-  rating: number;
-  studio: string;
-  slug: string;
-};
+import { Anime } from "@/types/anime";
 
 type AnimeGridProps = {
   anime: Anime[];

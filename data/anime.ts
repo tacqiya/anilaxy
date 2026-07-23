@@ -1,4 +1,6 @@
-export const anime = [
+import { Anime } from "@/types/anime";
+
+export const anime: Anime[] = [
   {
   id: 1,
   slug: "frieren",
@@ -10,7 +12,7 @@ export const anime = [
   rating: 10,
   genres: ["Fantasy", "Adventure", "Drama"],
   image: "/anime/frieren.jpg",
-
+    coverImage: "/anime/frieren-cover.jpg",
   description:
     "After defeating the Demon King, the elf mage Frieren begins a new journey to understand the meaning of life and the people she traveled with.",
 
@@ -27,6 +29,7 @@ export const anime = [
   cons: [
     "Slow pacing in the beginning",
   ],
+  trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
 },
 
   {
@@ -39,6 +42,7 @@ export const anime = [
     status: "Ongoing",
     rating: 10,
     image: "/anime/onepiece.jpg",
+    coverImage: "/anime/onepiece-cover.jpg",
     description:
       "The legendary pirate adventure following Monkey D. Luffy.",
     genres: ["Action", "Adventure", "Comedy"],
@@ -52,6 +56,7 @@ export const anime = [
     cons: [
       "Slow pacing in the beginning",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -62,6 +67,7 @@ export const anime = [
     year: 2013,
     rating: 9,
     image: "/anime/aot.jpg",
+    coverImage: "/anime/aot-cover.jpg",
     description:
       "Humanity's desperate fight for survival against the Titans.",
     genres: ["Action", "Drama", "Fantasy"],
@@ -77,6 +83,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -87,6 +94,7 @@ export const anime = [
     year: 2023,
     rating: 8,
     image: "/anime/sololeveling.jpg",
+    coverImage: "/anime/sololeveling-cover.jpg",
     description:
       "A web novel adaptation about a low-ranked player who gains incredible power.",
     genres: ["Action", "Fantasy"],
@@ -102,6 +110,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -112,6 +121,7 @@ export const anime = [
     year: 2022,
     rating: 9,
     image: "/anime/chainsawman.jpg",
+    coverImage: "/anime/chainsawman-cover.jpg",
     description:
       "A dark fantasy anime about a young man who becomes a devil hunter after merging with his pet devil.",
     genres: ["Action", "Horror", "Dark Fantasy"],
@@ -127,6 +137,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -137,6 +148,7 @@ export const anime = [
     year: 2016,
     rating: 8,
     image: "/anime/myheroacademia.jpg",
+    coverImage: "/anime/myheroacademia-cover.jpg",
     description:
       "A young boy without powers in a world of heroes.",
     genres: ["Action", "Comedy", "School"],
@@ -152,6 +164,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -162,6 +175,7 @@ export const anime = [
     year: 2019,
     rating: 9,
     image: "/anime/demonslayer.jpg",
+    coverImage: "/anime/demonslayer-cover.jpg",
     description:
       "A young boy becomes a demon hunter to save his sister and avenge his family.",
     genres: ["Action", "Supernatural", "Historical"],
@@ -177,6 +191,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -187,6 +202,7 @@ export const anime = [
     year: 2020,
     rating: 9,
     image: "/anime/jujutsukaisen.jpg",
+    coverImage: "/anime/jujutsukaisen-cover.jpg",
     description:
       "A young boy who becomes a sorcerer to fight curses.",
     genres: ["Action", "Supernatural", "School"],
@@ -202,6 +218,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -212,6 +229,7 @@ export const anime = [
     year: 2022,
     rating: 8,
     image: "/anime/spyxfamily.jpg",
+    coverImage: "/anime/spyxfamily-cover.jpg",
     description:
       "A spy, an assassin, and a telepath form an unlikely family.",
     genres: ["Action", "Comedy", "Slice of Life"],
@@ -227,6 +245,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -237,6 +256,7 @@ export const anime = [
     year: 2014,
     rating: 8,
     image: "/anime/7deadlysins.jpg",
+    coverImage: "/anime/7deadlysins-cover.jpg",
     description:
       "A group of rebels fights against the tyrannical king and his army.",
     genres: ["Action", "Fantasy", "Adventure"],
@@ -252,6 +272,7 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   },
 
   {
@@ -262,6 +283,7 @@ export const anime = [
     year: 2022,
     rating: 8,
     image: "/anime/bluelock.jpg",
+    coverImage: "/anime/bluelock-cover.jpg",
     description:
       "A competitive soccer anime about a group of players striving to become the best.",
     genres: ["Sports", "Drama", "Slice of Life"],
@@ -277,5 +299,6 @@ export const anime = [
     cons: [
       "Some pacing issues",
     ],
+    trailer: "https://www.youtube.com/watch?v=1J0k5g8X6xM",
   }
 ];

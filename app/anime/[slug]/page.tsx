@@ -1,6 +1,8 @@
 import { anime } from "@/data/anime";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default async function AnimePage({
   params,
@@ -16,7 +18,9 @@ export default async function AnimePage({
   }
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-10">
+    <main className="min-h-screen bg-zinc-950 text-white">
+      <Navbar />
+      <div className="max-w-7xl mx-auto px-6 py-16">
       <div className="max-w-5xl mx-auto">
         <Image
           src={selectedAnime.image}
@@ -100,8 +104,21 @@ export default async function AnimePage({
             {selectedAnime.rating}/10
           </p>
         </section>
-
+        <section className="mt-12">
+          <h2 className="text-3xl font-bold mb-4">
+            Watch the Trailer
+          </h2>
+          <div className="relative aspect-video w-full max-w-2xl mx-auto">
+            <iframe
+              src={selectedAnime.trailer}
+              className="w-full h-full rounded-xl"
+              allowFullScreen
+            />
+          </div>
+        </section>
       </div>
+      </div>
+      <Footer />
     </main>
   );
 }

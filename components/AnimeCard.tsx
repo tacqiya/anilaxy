@@ -1,13 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Anime } from "@/types/anime";
 
-type AnimeCardProps = {
-  title: string;
-  image: string;
-  rating?: number;
-  studio: string;
-  slug?: string;
-};
+type AnimeCardProps = Pick<Anime, "title" | "image" | "rating" | "studio" | "slug">;
 
 export default function AnimeCard({
   title,
