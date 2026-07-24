@@ -1,8 +1,7 @@
 import { anime } from "@/data/anime";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Badge from "@/components/ui/Badge";
 
 export default async function AnimePage({
   params,
@@ -19,7 +18,6 @@ export default async function AnimePage({
 
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
-      <Navbar />
       <div className="max-w-7xl mx-auto px-6 py-16">
       <div className="max-w-5xl mx-auto">
         <Image
@@ -36,12 +34,11 @@ export default async function AnimePage({
 
         <div className="flex flex-wrap gap-2 mt-6">
           {selectedAnime.genres.map((genre) => (
-            <span
+            <Badge
               key={genre}
-              className="bg-red-600 px-3 py-1 rounded-full text-sm"
             >
               {genre}
-            </span>
+            </Badge>
           ))}
         </div>
 
@@ -118,7 +115,6 @@ export default async function AnimePage({
         </section>
       </div>
       </div>
-      <Footer />
     </main>
   );
 }

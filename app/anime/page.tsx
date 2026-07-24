@@ -2,9 +2,8 @@
 import { useState } from "react";
 import { anime } from "@/data/anime";
 
-import Navbar from "@/components/Navbar";
-import SearchBar from "@/components/SearchBar";
-import AnimeGrid from "@/components/AnimeGrid";
+import SearchBar from "@/components/ui/SearchBar";
+import AnimeGrid from "@/components/anime/AnimeGrid";
 
 export default function AnimePage() {
     const [search, setSearch] = useState("");
@@ -13,7 +12,6 @@ export default function AnimePage() {
   );
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
-        <Navbar />
       <section className="max-w-7xl mx-auto px-6 py-16">
         <SearchBar
             search={search}

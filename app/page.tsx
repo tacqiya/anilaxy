@@ -1,15 +1,11 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import ReviewSection from "@/components/ReviewSection";
-import Footer from "@/components/Footer";
+import Hero from "@/components/ui/Hero";
+import ReviewSection from "@/components/ui/ReviewSection";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950">
-      <Navbar />
       <Hero />
       <ReviewSection />
-      <Footer />
     </main>
   );
 }

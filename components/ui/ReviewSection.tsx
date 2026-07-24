@@ -1,4 +1,4 @@
-import AnimeCard from "./AnimeCard";
+import AnimeCard from "../anime/AnimeCard";
 import SectionTitle from "./SectionTitle";
 
 import { anime } from "@/data/anime";
