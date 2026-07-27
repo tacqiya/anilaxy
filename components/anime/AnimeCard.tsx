@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Anime } from "@/types/anime";
+import { Card } from "@/components/ui/Card";
 
 type AnimeCardProps = Pick<Anime, "title" | "image" | "rating" | "studio" | "slug">;
 
@@ -13,7 +14,7 @@ export default function AnimeCard({
 }: AnimeCardProps) {
   return (
     <Link href={`/anime/${slug}`}>
-    <div className="bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition duration-300 shadow-lg">
+    <Card className="bg-zinc-900 hover:bg-zinc-800 transition">
       <Image
         src={image}
         alt={title}
@@ -39,7 +40,7 @@ export default function AnimeCard({
           {studio}
         </p>
       </div>
-    </div>
+    </Card>
     </Link>
   );
 }

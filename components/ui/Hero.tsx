@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/Button";
+
 export default function Hero() {
   return (
     <section className="bg-gradient-to-b from-zinc-950 to-black text-center py-36">
@@ -10,9 +12,9 @@ export default function Hero() {
         legendary fights, and beautiful manga.
       </p>
 
-      <button className="mt-10 bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg text-white font-semibold transition">
+      <Button variant="destructive" size="lg" className="mt-10">
         Explore Reviews
-      </button>
+      </Button>
     </section>
   );
 }
